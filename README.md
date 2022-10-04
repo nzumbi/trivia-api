@@ -159,6 +159,7 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
   example:
 
 curl http://127.0.0.1:5000/search -X POST -H "Content-Type: application/json" -d '{"searchTerm":"what"}'
+```
 {
   "questions": [
     {
@@ -235,7 +236,7 @@ curl http://127.0.0.1:5000/search -X POST -H "Content-Type: application/json" -d
   "success": true, 
   "total_questions": 43
 }
-
+```
 
 
 GET/categories
@@ -243,7 +244,7 @@ returns list of categories, paginated into 10 items per page.
 
 example:
 curl http://127.0.0.1:5000/categories
-
+```
 {
   "categories": {
     "1": "Science", 
@@ -255,18 +256,18 @@ curl http://127.0.0.1:5000/categories
   }, 
   "success": true
 }
-
+```
 
 DELETE /questions/{id}
 deletes a question whose id exists.
 
 example:
 curl -X DELETE http://127.0.0.1:5000/questions/16?page=2
-
+```
 {
   "success": true
 }
-
+```
 
 POST /quizzes
 receives question and category, returns next question.
@@ -291,6 +292,7 @@ returns a list of questions in each category paginated into 10 per page.
 
 example:
 curl http://127.0.0.1:5000/categories/3/questions
+```
 {
   "categories": {
     "1": "Science", 
@@ -324,3 +326,4 @@ curl http://127.0.0.1:5000/categories/3/questions
     }
   ], 
   "succes": true
+```
