@@ -73,7 +73,7 @@ creates a new question and returns a list of questions.
 example:
 
 curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"question":"What is the heaviest organ in the human body?", "answer": "The Liver","category" :"1", "difficulty":"4"}'
-`
+
 {
   "created": 73, 
   "questions": [
@@ -151,7 +151,7 @@ curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json"
   "success": true, 
   "total_questions": 87
 }
-`
+
 
   POST /search
   search for a question. Returns the results, success value, total questions.
